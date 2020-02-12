@@ -18,7 +18,6 @@ body {
     height: 89px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
     color: white;
     font-weight: bold;
 }
@@ -30,7 +29,7 @@ body {
 .menu {
     display: flex;
     width: 370px;
-    font-size: 9px;
+    font-size: 11px;
     list-style: none;
     justify-content: space-between;
 }
