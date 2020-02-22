@@ -1,6 +1,24 @@
 @font-face {
     font-family: "Lato";
-    src: url("./assets/Lato-Bold.ttf"), url("./assets/Lato-Light.ttf"), url("./assets/Lato-Regular.ttf");
+    src: url("./assets/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/Lato-Light.ttf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -8,9 +26,15 @@ body {
     font-family: "Lato";
 }
 
+h1 {
+    font-size: 0;
+    color: transparent;
+}
+
 .wrapper {
     max-width: 1020px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .header {
@@ -36,7 +60,7 @@ body {
 
 .menu li::before {
     content: '·';
-    color: #ffffff70;
+    color: #ffffff30;
     margin-right: 17px;
 }
 
@@ -53,11 +77,71 @@ body {
     cursor: pointer;
 }
 
+.line {
+    background-color: #323746;
+    height: 6px;
+    width: 1020px;
+    margin: 0 auto;
+}
+
 .main {
     height: 600px;
     background-color: #e36861;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    cursor: pointer;
+}
+
+.services {
+    height: 496px;
+    background-color: #f2f2f2;
+    color: #666d89;
+}
+
+.services_title {
+    padding-top: 67px;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(102, 109, 137, 255);
+}
+
+.service_text {
+    margin-top: 33px;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    line-height: 2;
+}
+
+.service_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.service_item {
+    display: flex;
+    max-width: 300px;
+    max-height: 86px;
+    margin-bottom: 37px;
+}
+
+.service_item img {
+    margin-right: 20px;
+}
+
+.service_item .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service_item .text {
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: bold;
 }
