@@ -37,11 +37,13 @@
     padding: 3px 5px 4px;
     margin-right: 9px;
     margin-top: 3px;
+    outline: none;
 }
 
 .portfolio-buttons>button:hover {
     color: white;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .plates {
@@ -56,10 +58,6 @@
     width: 224px;
     height: 190px;
     margin-top: 17px;
-}
-
-.divider {
-    height: 6px;
 }
 
 .about-us {
