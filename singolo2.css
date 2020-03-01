@@ -1,0 +1,40 @@
+@import './singolo1.css';
+
+.portfolio {
+    background-color: #2d303a;
+    color: #4f5569;
+    height: 869px;
+}
+
+.portfolio h2 {
+    
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.portfolio-text {
+    font-family: Lato;
+    font-size: 18pt;
+    color: rgba(118, 126, 158, 255);
+    font-weight: lighter;
+    text-align: left;
+}
+
+.portfolio-buttons button {
+    color: rgba(118, 126, 158, 255);
+    border: 1px solid rgba(118, 126, 158, 255);
+    border-radius: 5px;
+}
+
+.plates {
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.plate {
+    width: 224px;
+    height: 190px;
+}
