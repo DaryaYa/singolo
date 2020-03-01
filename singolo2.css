@@ -117,3 +117,8 @@
     margin-top: 20px;
 }
 
+.icon:hover img {
+    background-color: #e36861;
+    border-radius: 50%;
+}
+
