@@ -29,7 +29,7 @@
     border-radius: 5px;
     background-color: transparent;
     padding: 5px 7px;
-    margin: 5px;
+    margin-right: 10px;
 }
 
 .portfolio-buttons>button:hover {
@@ -40,10 +40,52 @@
 .plates {
     display: flex;
     overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 
 .plate {
     width: 224px;
     height: 190px;
+    margin-top: 17px;
+}
+
+.divider {
+    height: 6px;
+}
+
+.about-us {
+    height: 734px;
+    background-color: white;
+    color: rgba(118, 126, 158, 255);
+}
+
+.about-us h2 {
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.about-us_text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 303px;
+    height: 443px;
+}
+
+.card h3 {
+    font-size: 18px;
 }
