@@ -10,13 +10,14 @@
     
     color: #666d89;
     font-family: "Lato";
-    font-weight: 900;
+    font-size: 22px;
+    font-weight: bold;
     text-align: left;
 }
 
 .portfolio-text {
     font-family: Lato;
-    font-size: 18pt;
+    font-size: 18px;
     color: rgba(118, 126, 158, 255);
     font-weight: lighter;
     text-align: left;
@@ -26,6 +27,14 @@
     color: rgba(118, 126, 158, 255);
     border: 1px solid rgba(118, 126, 158, 255);
     border-radius: 5px;
+    background-color: transparent;
+    padding: 5px 7px;
+    margin: 5px;
+}
+
+.portfolio-buttons>button:hover {
+    color: white;
+    border: 1px solid white;
 }
 
 .plates {
