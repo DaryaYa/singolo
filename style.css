@@ -67,7 +67,7 @@ h1 {
     font-size: 11px;
     list-style: none;
     justify-content: space-between;
-    
+
 }
 
 .menu li::before {
@@ -154,15 +154,15 @@ h1 {
 .service_list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 45px;
+    margin-top: 44px;
     width: 957px;
 }
 
 .service_item {
     display: flex;
     max-width: 319px;
-    max-height: 80px;
-    margin-bottom: 42px;
+    max-height: 84px;
+    margin-bottom: 38px;
     line-height: 1.4;
 }
 
@@ -345,7 +345,7 @@ h1 {
 
 .last-part h2 {
     margin-bottom: 18px;
-    padding-top: 60px;
+    padding-top: 58px;
     font-size: 30px;
 }
 
@@ -403,6 +403,7 @@ h1 {
 
 .contact-info h4 {
     letter-spacing: 1.2px;
+    margin-top: 1px;
 }
 
 .form-text {
@@ -449,6 +450,10 @@ h1 {
     justify-content: space-between;
     color: #666d89;
     margin-top: 22px;
+}
+
+.footer-info div:first-child {
+    margin-top: -4px;
 }
 
 .footer-info p {
