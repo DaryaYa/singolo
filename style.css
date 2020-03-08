@@ -30,7 +30,9 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     color: white;
+
 }
+
 .logo-star {
     color: #e36861;
     font-size: 20px;
@@ -56,7 +58,7 @@ h1 {
 
 .logo {
     height: 20px;
-    padding-bottom: 36px;
+    padding-bottom: 40px;
 }
 
 .menu {
@@ -65,6 +67,7 @@ h1 {
     font-size: 11px;
     list-style: none;
     justify-content: space-between;
+    padding-left: 2px;
 }
 
 .menu li::before {
@@ -73,7 +76,7 @@ h1 {
     margin-right: 17px;
 }
 
-.menu li:first-child {
+.menu li:hover {
     color: #e36861;
 }
 
@@ -84,6 +87,14 @@ h1 {
 
 .menu:hover {
     cursor: pointer;
+}
+
+.line-top {
+    background-color: #191919;
+    height: 6px;
+    width: 1020px;
+    margin: 0 auto;
+    margin-left: 40px;
 }
 
 .line {
@@ -104,20 +115,24 @@ h1 {
 .left-arr:hover,
 .right-arr:hover {
     cursor: pointer;
+    margin-bottom: 10px;
 }
+
 .vert_phone {
     margin-left: -15px;
     margin-top: -7px;
 }
+
 .horizontal_phone {
     margin-right: -16px;
     margin-top: -7px;
 }
 
 .services {
-    height: 496px;
+    height: 500px;
     background-color: #f2f2f2;
     color: #666d89;
+    border-bottom: solid 6px #f2f2f2;
 }
 
 .services_title {
@@ -129,7 +144,7 @@ h1 {
 }
 
 .service_text {
-    margin-top: 15px;
+    margin-top: 16px;
     font-weight: lighter;
     font-size: 18px;
     color: rgba(118, 126, 158, 255);
@@ -151,6 +166,10 @@ h1 {
     line-height: 1.4;
 }
 
+.services-img {
+    width: 78px;
+}
+
 .service_item img {
     margin-right: 20px;
 }
@@ -158,6 +177,9 @@ h1 {
 .service_item .title {
     font-size: 18px;
     font-weight: bold;
+    margin-top: -4px;
+    margin-bottom: 5px;
+    padding-left: 1px;
 }
 
 .service_item .text {
@@ -165,6 +187,7 @@ h1 {
     line-height: 1.8;
     font-weight: bold;
 }
+
 .portfolio {
     background-color: #2d303a;
     color: #4f5569;
@@ -172,13 +195,13 @@ h1 {
 }
 
 .portfolio h2 {
-    
+
     color: #666d89;
     font-family: "Lato";
     font-size: 30px;
     font-weight: bold;
     text-align: left;
-        padding-top: 59px;
+    padding-top: 59px;
 }
 
 .portfolio-text {
@@ -216,7 +239,9 @@ h1 {
     overflow: hidden;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 941px;
+    width: 942px;
+    height: 618px;
+    margin-top: 2px;
 }
 
 .plate {
@@ -237,7 +262,7 @@ h1 {
     color: #666d89;
     font-family: "Lato";
     font-weight: bold;
-    font-size: 30px;
+    font-size: 31px;
 }
 
 .about-us_text {
@@ -246,7 +271,7 @@ h1 {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    padding-top: 19px;
+    padding-top: 18px;
 }
 
 .cards {
@@ -258,6 +283,14 @@ h1 {
 .card {
     width: 304px;
     height: 443px;
+}
+
+.card:nth-child(2) {
+    width: 305px;
+}
+
+.card:last-child {
+    width: 301px;
 }
 
 .card h3 {
@@ -286,37 +319,78 @@ h1 {
 }
 
 .last-part {
-    height: 648px;
+    height: 653px;
     background-color: #f06c64;
     color: #f0d8d9;
 }
 
+.last-part h2 {
+    margin-bottom: 18px;
+    padding-top: 60px;
+    font-size: 30px;
+}
+
+.last-part>p {
+    line-height: 1.9;
+    font-family: "Lato";
+    text-align: left;
+    letter-spacing: 0.8px;
+}
+
 .form {
-   display: flex;
-   justify-content: space-between;
-    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
 }
 
 .form form {
     width: 619px;
 }
 
+.form::placeholder {
+    color: #f48c8f;
+    opacity: 1;
+}
+
 .form input {
     width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    margin-bottom: 16px;
+    outline: none;
 }
 
 .form textarea {
     height: 202px;
     width: 100%;
+    padding: 11px 15px 13px 14px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    margin-bottom: 16px;
+    resize: none;
+    outline: none;
 }
 
 .contact-info {
     width: 300px;
 }
 
+.contact-info h4 {
+    letter-spacing: 1.2px;
+}
+
 .form-text {
     font-size: 12px;
     color: rgba(240, 216, 217, 255);
+    line-height: 1.9;
+    margin-top: 9px;
 }
 
 .form-address {
@@ -324,7 +398,7 @@ h1 {
 }
 
 .footer {
-   
+
     height: 76px;
 }
 
