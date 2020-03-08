@@ -1,0 +1,122 @@
+@import './singolo1.css';
+
+.portfolio {
+    background-color: #2d303a;
+    color: #4f5569;
+    height: 869px;
+}
+
+.portfolio h2 {
+    
+    color: #666d89;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+        padding-top: 59px;
+}
+
+.portfolio-text {
+    font-family: Lato;
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 22px;
+}
+
+.portfolio-buttons {
+    padding-top: 10px;
+}
+
+.portfolio-buttons button {
+    color: rgba(118, 126, 158, 255);
+    border: 1px solid rgba(118, 126, 158, 255);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 3px 5px 4px;
+    margin-right: 9px;
+    margin-top: 3px;
+    outline: none;
+}
+
+.portfolio-buttons>button:hover {
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.plates {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 941px;
+}
+
+.plate {
+    width: 224px;
+    height: 190px;
+    margin-top: 17px;
+}
+
+.about-us {
+    height: 734px;
+    background-color: white;
+    color: rgba(118, 126, 158, 255);
+    font-size: 31px;
+    padding-top: 58px;
+}
+
+.about-us h2 {
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.about-us_text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    padding-top: 19px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.card {
+    width: 304px;
+    height: 443px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-top: 9px;
+    letter-spacing: 0.3px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icon:hover img {
+    background-color: #e36861;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,53 @@
+.last-part {
+    height: 648px;
+    background-color: #f06c64;
+    color: #f0d8d9;
+}
+
+.form {
+   display: flex;
+   justify-content: space-between;
+    
+}
+
+.form form {
+    width: 619px;
+}
+
+.form input {
+    width: 100%;
+}
+
+.form textarea {
+    height: 202px;
+    width: 100%;
+}
+
+.contact-info {
+    width: 300px;
+}
+
+.form-text {
+    font-size: 12px;
+    color: rgba(240, 216, 217, 255);
+}
+
+.form-address {
+    font-size: 12px;
+}
+
+.footer {
+   
+    height: 76px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    color: #666d89;
+}
+
+.line {
+    height: 6px;
+    margin-left: -40px;
+}
