@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/Lato-Light.ttf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #191919;
+    font-family: "Lato";
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.logo-star {
+    color: #e36861;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.header {
+    display: flex;
+    height: 89px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 9px;
+    padding-right: 2px;
+}
+
+.logo {
+    height: 20px;
+    padding-bottom: 36px;
+}
+
+.menu {
+    display: flex;
+    width: 370px;
+    font-size: 11px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu li::before {
+    content: '·';
+    color: #ffffff30;
+    margin-right: 17px;
+}
+
+.menu li:first-child {
+    color: #e36861;
+}
+
+.menu li:first-child::before {
+    content: '';
+    margin-right: 0;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.line {
+    background-color: #323746;
+    height: 6px;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.main {
+    height: 600px;
+    background-color: #e36861;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-arr:hover,
+.right-arr:hover {
+    cursor: pointer;
+}
+.vert_phone {
+    margin-left: -15px;
+    margin-top: -7px;
+}
+.horizontal_phone {
+    margin-right: -16px;
+    margin-top: -7px;
+}
+
+.services {
+    height: 496px;
+    background-color: #f2f2f2;
+    color: #666d89;
+}
+
+.services_title {
+    padding-top: 61px;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(102, 109, 137, 255);
+}
+
+.service_text {
+    margin-top: 15px;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    line-height: 1.8;
+}
+
+.service_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    width: 957px;
+}
+
+.service_item {
+    display: flex;
+    max-width: 319px;
+    max-height: 80px;
+    margin-bottom: 42px;
+    line-height: 1.4;
+}
+
+.service_item img {
+    margin-right: 20px;
+}
+
+.service_item .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service_item .text {
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+.portfolio {
+    background-color: #2d303a;
+    color: #4f5569;
+    height: 869px;
+}
+
+.portfolio h2 {
+    
+    color: #666d89;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+        padding-top: 59px;
+}
+
+.portfolio-text {
+    font-family: Lato;
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 22px;
+}
+
+.portfolio-buttons {
+    padding-top: 10px;
+}
+
+.portfolio-buttons button {
+    color: rgba(118, 126, 158, 255);
+    border: 1px solid rgba(118, 126, 158, 255);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 3px 5px 4px;
+    margin-right: 9px;
+    margin-top: 3px;
+    outline: none;
+}
+
+.portfolio-buttons>button:hover {
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.plates {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 941px;
+}
+
+.plate {
+    width: 224px;
+    height: 190px;
+    margin-top: 17px;
+}
+
+.about-us {
+    height: 734px;
+    background-color: white;
+    color: rgba(118, 126, 158, 255);
+    font-size: 31px;
+    padding-top: 58px;
+}
+
+.about-us h2 {
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.about-us_text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    padding-top: 19px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.card {
+    width: 304px;
+    height: 443px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-top: 9px;
+    letter-spacing: 0.3px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icon:hover img {
+    background-color: #e36861;
+    border-radius: 50%;
+}
+
+.last-part {
+    height: 648px;
+    background-color: #f06c64;
+    color: #f0d8d9;
+}
+
+.form {
+   display: flex;
+   justify-content: space-between;
+    
+}
+
+.form form {
+    width: 619px;
+}
+
+.form input {
+    width: 100%;
+}
+
+.form textarea {
+    height: 202px;
+    width: 100%;
+}
+
+.contact-info {
+    width: 300px;
+}
+
+.form-text {
+    font-size: 12px;
+    color: rgba(240, 216, 217, 255);
+}
+
+.form-address {
+    font-size: 12px;
+}
+
+.footer {
+   
+    height: 76px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    color: #666d89;
+}
+
+.line {
+    height: 6px;
+    margin-left: -40px;
+}
