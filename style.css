@@ -43,6 +43,7 @@ h1 {
     max-width: 1020px;
     margin: 0 auto;
     padding: 0 40px;
+    background: #2d2f3b;
 }
 
 .header {
@@ -54,6 +55,7 @@ h1 {
     font-weight: bold;
     padding-top: 9px;
     padding-right: 2px;
+    background-color: #2d2f3b;
 }
 
 .logo {
@@ -90,11 +92,10 @@ h1 {
 }
 
 .line-top {
-    background-color: #191919;
+    background-color: #2d2f3b;
     height: 6px;
     width: 1020px;
     margin: 0 auto;
-    margin-left: 40px;
 }
 
 .line {
