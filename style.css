@@ -150,6 +150,8 @@ h1 {
     font-size: 18px;
     color: rgba(118, 126, 158, 255);
     line-height: 1.8;
+    width: 100%;
+    text-align: justify;
 }
 
 .service_list {
@@ -161,7 +163,9 @@ h1 {
 
 .service_item {
     display: flex;
-    max-width: 319px;
+    max-width: 299px;
+    margin-right: 20px;
+    text-align: justify;
     max-height: 84px;
     margin-bottom: 38px;
     line-height: 1.4;
@@ -286,6 +290,8 @@ h1 {
     font-family: "Lato";
     font-weight: 300;
     padding-top: 18px;
+    width: 100%;
+    text-align: justify;
 }
 
 .cards {
@@ -298,6 +304,7 @@ h1 {
     width: 304px;
     height: 443px;
     margin-left: -1px;
+    text-align: justify;
 }
 
 .photo img {
@@ -324,7 +331,7 @@ h1 {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
+
     margin-top: 9px;
     letter-spacing: 0.3px;
 }
@@ -355,6 +362,7 @@ h1 {
     font-family: "Lato";
     text-align: left;
     letter-spacing: 0.8px;
+    text-align: justify;
 }
 
 .form {
@@ -367,7 +375,7 @@ h1 {
     width: 619px;
 }
 
-.form::placeholder {
+.form input::placeholder {
     color: #f48c8f;
     opacity: 1;
 }
