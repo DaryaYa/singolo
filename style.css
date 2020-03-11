@@ -101,7 +101,7 @@ h1 {
 }
 
 .active {
-    background-color: #e36861;
+    background-color: #767e9e;
 
 }
 
@@ -508,7 +508,7 @@ h1 {
 #message-block {
     position: absolute;
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
     top: 0;
     left: 0;
     background-color: #0007;
@@ -520,8 +520,9 @@ h1 {
 
 #message {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 300px;
+    top: 50% ;
+    left: calc(50% - 150px);
     border: #191919 solid 5px;
     text-align: center;
     background-color: #f06c64;
