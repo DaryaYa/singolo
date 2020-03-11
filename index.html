@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>singolo</title>
+    <link rel="shortcut icon" href="./assets/star1.png" type="image/x-icon">
+    <title>Singolo</title>
 </head>
 
 <body>
@@ -14,12 +15,12 @@
             <div class="logo">
                 <h1><span>SINGOLO</span><span class="logo-star">*</span></h1>
             </div>
-            <ul class="menu">
-                <li>HOME</li>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+            <ul class="menu" id="top-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#about-us">ABOUT</a></li>
+                <li><a href="#contacts">CONTACT</a></li>
             </ul>
         </header>
     </div>
@@ -43,6 +44,7 @@
 
         </section>
         <section class="services wrapper">
+            <a name="services"></a>
             <p class="services_title">Our Services</p>
             <p class="service_text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
                 commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
@@ -103,6 +105,7 @@
         </section>
 
 <section class="portfolio wrapper">
+    <a name="portfolio"></a>
     <h2>Portfolio</h2>
     <p class="portfolio-text">
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -113,7 +116,7 @@
         <button>Web Design</button>
         <button>Artwork</button>
     </div>
-    <div class="plates">
+    <div class="plates" id="plates">
         <div class="plate"><img src="./assets/Project1.jpeg" alt="proj1"></div>
         <div class="plate"><img src="./assets/Project2.jpeg" alt="proj2"></div>
         <div class="plate"><img src="./assets/Layer3.jpeg" alt="proj3"></div>
@@ -131,6 +134,7 @@
 </section>
 
 <section class="about-us wrapper">
+    <a name="about-us"></a>
     <h2>About Us</h2>
     <p class="about-us_text">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
@@ -188,6 +192,7 @@
 </section>
 
 <section class="last-part wrapper">
+    <a name="contacts"></a>
     <h2>Get a Quote</h2>
     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
         porttitor
@@ -211,6 +216,12 @@
                 <a href="mailto:info@singolo.com"><img src="./assets/mail.png" alt="mail">info@singolo.com</a>
             </div>
             <button class="submit-button" type="submit" form="data">SUBMIT</button>
+            <div class="message" id="message">
+               <p>Письмо отправлено</p>
+                <p>Тема: </p>
+                <p>Описание: </p>
+                <button id="close-message">OK</button>
+            </div>
         </div>
     </div>
 
