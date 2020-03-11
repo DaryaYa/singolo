@@ -203,7 +203,7 @@
             <input type="text" placeholder="Name (Required)" id="fName" name="fName" required>
             <input type="email" placeholder="Email (Required)" id="email" name="email" required>
             <input type="text" placeholder="Subject" id="subject" name="subject" required>
-            <textarea placeholder="Describe your project in detail..." required></textarea>
+            <textarea placeholder="Describe your project in detail..." required id="description"></textarea>
         </form>
         <div class="contact-info">
             <h4>Contact Information</h4>
@@ -216,11 +216,13 @@
                 <a href="mailto:info@singolo.com"><img src="./assets/mail.png" alt="mail">info@singolo.com</a>
             </div>
             <button class="submit-button" type="submit" form="data">SUBMIT</button>
-            <div class="message" id="message">
-               <p>Письмо отправлено</p>
-                <p>Тема: </p>
-                <p>Описание: </p>
-                <button id="close-message">OK</button>
+            <div class="message hidden" id="message-block">
+                <div class="message" id="message">
+                    <p>Письмо отправлено</p>
+                    <p>Тема: <span id="topic"></span> </p>
+                    <p>Описание: <span id="about-what"></span> </p>
+                    <button id="close-message">OK</button>
+                </div>               
             </div>
         </div>
     </div>

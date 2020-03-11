@@ -505,16 +505,25 @@ h1 {
     margin-left: -40px;
 }
 
-.message {
+#message-block {
     position: absolute;
-    top: 50vh;
-    left: 50vw;
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    color: #323746;
-    border: 5px solid #666d89;
-    text-align: center;
-    padding-top: 40px;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #0007;
+}
+
+#message-block.hidden {
     display: none;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: #191919 solid 5px;
+    text-align: center;
+    background-color: #f06c64;
+    color: #191919;
 }

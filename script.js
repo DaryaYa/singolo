@@ -3,8 +3,9 @@
 const TOP_MENU = document.getElementById('top-menu');
 const PLATES = document.getElementById('plates');
 const SUBMIT = document.querySelector('.submit-button');
-const MESSAGE = document.getElementById('message');
-const closeMessage = document.getElementById('close-message');
+const messageBlock = document.getElementById('message-block');
+const message = document.getElementById('message');
+const CLOSE_MESSAGE = document.getElementById('close-message');
 
 TOP_MENU.addEventListener('click', (event) => {
     const target = event.target;
@@ -19,9 +20,9 @@ PLATES.addEventListener('click', (ev) => {
 
 SUBMIT.addEventListener('click', (eve) => {
     eve.preventDefault();
-    MESSAGE.style.display = 'block';
+    
 });
 
-closeMessage.addEventListener('click', (e) => {
-    e.target.closest('div').style.display = 'none';
+CLOSE_MESSAGE.addEventListener('click', (e) => {
+    e.target.closest('div').closest('div').style.display = 'none';
 })
