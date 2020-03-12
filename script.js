@@ -9,8 +9,8 @@ let CLOSE_MESSAGE = document.getElementById('close-message');
 
 TOP_MENU.addEventListener('click', (event) => {
     const target = event.target;
-    TOP_MENU.querySelectorAll('li').forEach(element => element.classList.remove('active'));   
-    target.closest('li').classList.add('active');   
+    TOP_MENU.querySelectorAll('li').forEach(element => element.querySelector('a').classList.remove('active'));   
+    target.classList.add('active');   
 });
 
 PLATES.addEventListener('click', (ev) => {

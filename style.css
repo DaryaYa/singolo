@@ -46,6 +46,15 @@ h1 {
     background: #2d2f3b;
 }
 
+.sticky {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 40px;
+    background: rgba(45, 47, 59, 0.85);
+    position: sticky;
+    top: 0;
+}
+
 .header {
     display: flex;
     height: 89px;
@@ -55,7 +64,7 @@ h1 {
     font-weight: bold;
     padding-top: 9px;
     padding-right: 2px;
-    background-color: #2d2f3b;
+
 }
 
 .logo {
@@ -74,20 +83,20 @@ h1 {
 
 }
 
-.menu li>a {
+.top-link {
     height: 90%;
     line-height: 7;
     color: white;
     text-decoration: none;
 }
 
-.menu li>a::before {
+.top-link::before {
     content: '·';
     color: #ffffff30;
     margin-right: 17px;
 }
 
-.menu li>a:hover {
+.top-link:hover {
     color: #e36861;
 }
 
@@ -101,7 +110,7 @@ h1 {
 }
 
 .active {
-    background-color: #767e9e;
+    color: #e36861;
 
 }
 
@@ -125,6 +134,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .left-arr:hover,
@@ -141,6 +151,12 @@ h1 {
 .horizontal_phone {
     margin-right: -16px;
     margin-top: -7px;
+}
+
+.slide-blue {
+    background-color: #648BF0;
+    position: absolute;
+    left: 217px;
 }
 
 .services {
@@ -521,7 +537,7 @@ h1 {
 #message {
     position: absolute;
     width: 300px;
-    top: 50% ;
+    top: 50%;
     left: calc(50% - 150px);
     border: #191919 solid 5px;
     text-align: center;
