@@ -30,7 +30,6 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     color: white;
-
 }
 
 .logo-star {
@@ -64,7 +63,6 @@ h1 {
     font-weight: bold;
     padding-top: 9px;
     padding-right: 2px;
-
 }
 
 .logo {
@@ -80,7 +78,6 @@ h1 {
     justify-content: space-between;
     height: 100%;
     align-items: center;
-
 }
 
 .top-link {
@@ -111,7 +108,6 @@ h1 {
 
 .active {
     color: #e36861;
-
 }
 
 .line-top {
@@ -238,7 +234,6 @@ h1 {
 }
 
 .portfolio h2 {
-
     color: #666d89;
     font-family: "Lato";
     font-size: 30px;
@@ -368,7 +363,6 @@ h1 {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
-
     margin-top: 9px;
     letter-spacing: 0.3px;
 }
@@ -488,7 +482,6 @@ h1 {
 }
 
 .footer {
-
     height: 76px;
 }
 
@@ -522,7 +515,7 @@ h1 {
 }
 
 #message-block {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 99vw;
     top: 0;
@@ -543,4 +536,9 @@ h1 {
     text-align: center;
     background-color: #f06c64;
     color: #191919;
+}
+
+button.active-white {
+    color: white;
+    border: 1px solid whitesmoke;
 }
