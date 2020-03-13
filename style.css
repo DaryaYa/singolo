@@ -547,11 +547,7 @@ button.active-white {
     border: 1px solid whitesmoke;
 }
 
-.black-left.hidden {
-    display: none;
-}
-
-.black-right.hidden {
+div.hidden {
     display: none;
 }
 
