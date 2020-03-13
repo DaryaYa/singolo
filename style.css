@@ -15,6 +15,10 @@
     font-weight: bold;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -541,4 +545,34 @@ h1 {
 button.active-white {
     color: white;
     border: 1px solid whitesmoke;
+}
+
+.black-left.hidden {
+    display: none;
+}
+
+.black-right.hidden {
+    display: none;
+}
+
+.black-left {
+    display: block;
+    width: 189px;
+    height: 333px;
+    position: absolute;
+    background-color: black;
+    top: 119px;
+    left: 126px;
+    border-radius: 2px;
+}
+
+.black-right {
+    display: block;
+    width: 333px;
+    height: 189px;
+    position: absolute;
+    background-color: black;
+    top: 189px;
+    right: 203px;
+    border-radius: 2px;
 }

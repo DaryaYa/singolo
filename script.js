@@ -6,9 +6,10 @@ const message = document.getElementById('message');
 let CLOSE_MESSAGE = document.getElementById('close-message');
 let form = document.getElementById('data');
 let PARTFOLIO_BUTTONS = document.querySelector('.portfolio-buttons');
+const verticalPhone = document.querySelector('.vert_phone');
+const horizPhone = document.querySelector('.horizontal_phone');
 
 function shuffle() {
-
     PLATES.removeChild(PLATES.firstChild);
     PLATES.appendChild(PLATES.firstChild);
 }
@@ -53,9 +54,20 @@ form.addEventListener('submit', (eve) => {
     document.getElementById('about-what').innerText = description;
 
     eve.preventDefault();
+    form.reset();
     return false;
 });
 
 CLOSE_MESSAGE.addEventListener('click', (e) => {
     messageBlock.classList.add('hidden');
+});
+
+verticalPhone.addEventListener('click', () => {
+    verticalPhone.querySelector('.black-left')
+        .classList.toggle('hidden');
+});
+
+horizPhone.addEventListener('click', () => {
+    horizPhone.querySelector('.black-right')
+        .classList.toggle('hidden');
 });
