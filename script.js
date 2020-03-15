@@ -10,8 +10,10 @@ const verticalPhone = document.querySelector('.vert_phone');
 const horizPhone = document.querySelector('.horizontal_phone');
 
 function shuffle() {
+    let first = PLATES.firstChild;
     PLATES.removeChild(PLATES.firstChild);
-    PLATES.appendChild(PLATES.firstChild);
+    PLATES.append(PLATES.firstChild);
+    PLATES.append(first);
 }
 
 TOP_MENU.addEventListener('click', (event) => {
@@ -38,10 +40,11 @@ PLATES.addEventListener('click', (ev) => {
 });
 
 form.addEventListener('submit', (eve) => {
+    eve.preventDefault();
 
     messageBlock.classList.remove('hidden');
-    const subject = document.getElementById('subject').value.toString();
-    const description = document.getElementById('description').value.toString();
+    let subject = document.getElementById('subject').value.toString();
+    let description = document.getElementById('description').value.toString();
     // message.append.innerText = `
     //     Письмо отправлено
     //     Тема: ${subject}
@@ -49,17 +52,20 @@ form.addEventListener('submit', (eve) => {
     // `;
     // message.innerHTML += '<button id="close-message">OK</button>';
 
-    document.getElementById('topic').innerText = subject;
+    if (!subject) { message.querySelectorAll('p')[1].innerHTML = '<span id="topic">Без темы</span>' } else {
+        document.getElementById('topic').innerText = `Тема: ${subject}`;
+    }
 
-    document.getElementById('about-what').innerText = description;
+    if (!description) { message.querySelectorAll('p')[2].innerHTML = '<span id="about-what">Без описания</span>' } else {
+        document.getElementById('about-what').innerText = `Описание: ${description}`;
+    }
 
-    eve.preventDefault();
-    form.reset();
     return false;
 });
 
 CLOSE_MESSAGE.addEventListener('click', (e) => {
     messageBlock.classList.add('hidden');
+    form.reset();
 });
 
 verticalPhone.addEventListener('click', () => {
@@ -71,3 +77,65 @@ horizPhone.addEventListener('click', () => {
     horizPhone.querySelector('.black-right')
         .classList.toggle('hidden');
 });
+
+////////// carousel 
+
+let items = document.querySelectorAll('.carousel .item');
+let currentItem = 0;
+let isEnabled = true;
+
+let el = document.querySelector('.carousel');
+
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('current', direction);
+    });
+}
+
+function showItem(direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('next', direction);
+        this.classList.add('current');
+        isEnabled = true;
+    })
+}
+
+function previousItem(n) {
+    hideItem('to-right');
+    changeCurrentItem(n - 1);
+    showItem('from-left');
+}
+
+function nextItem(n) {
+    hideItem('to-left');
+    changeCurrentItem(n + 1);
+    showItem('from-right');
+}
+
+document.querySelector('.left-arr').addEventListener('click', function() {
+    if (isEnabled) {
+        previousItem(currentItem);
+    }
+    isBlue();
+})
+
+
+document.querySelector('.right-arr').addEventListener('click', function() {
+    if (isEnabled) {
+        nextItem(currentItem);
+    }
+    isBlue();
+})
+
+let isBlue = () => {
+    if (document.querySelector('.blue').classList.contains('next')) {
+        document.querySelector('.main').style.backgroundColor = '#648BF0'
+    } else { document.querySelector('.main').style.backgroundColor = '#e36861' }
+}

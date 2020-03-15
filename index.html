@@ -27,26 +27,36 @@
     <main>
         <div class="line-top"></div>
         <section class="main wrapper">
+            <div class="carousel">
+                <div class="item-container">
+                    <div class="item current">
+                        <div class="slide">
+                            <div class="vert_phone">
+                                <img src="./assets/iPhone Vertical.png" alt="Vertical">
+                                <div class="black-left hidden"></div>
+                            </div>
+                            <div class="horizontal_phone">
+                                <img src="./assets/iPhone Horizontal.png" alt="Horizontal">
+                                <div class="black-right hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item blue">
+                        <div class="slide">
+                            <div class="slide-blue">
+                                <img src="./assets/Component1.png" alt="slide2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-arr">
+                    <img src="./assets/left.svg" alt="left arrow">
+                </div>
+                <div class="right-arr">
+                    <img src="./assets/right.svg" alt="right arrow">
+                </div>
 
-            <div class="left-arr">
-                <img src="./assets/left.svg" alt="left arrow">
             </div>
-            <div class="vert_phone">
-                <img src="./assets/iPhone Vertical.png" alt="Vertical">
-                <div class="black-left hidden"></div>
-            </div>
-            <div class="horizontal_phone">
-                <img src="./assets/iPhone Horizontal.png" alt="Horizontal">
-                <div class="black-right hidden"></div>
-            </div>
-            <div class="right-arr">
-
-                <img src="./assets/right.svg" alt="right arrow">
-            </div>
-            <div class="slide-blue">
-                <img src="./assets/Component1.png" alt="slide2">
-            </div>
-
         </section>
         <section class="services wrapper">
             <a name="services"></a>
@@ -195,8 +205,8 @@
                 <form action="/action_page.php" target="_blank" method="post" id="data">
                     <input type="text" placeholder="Name (Required)" id="fName" name="fName" required>
                     <input type="email" placeholder="Email (Required)" id="email" name="email" required>
-                    <input type="text" placeholder="Subject (Required)" id="subject" name="subject" required>
-                    <textarea placeholder="Describe your project in detail..." required id="description"></textarea>
+                    <input type="text" placeholder="Subject" id="subject" name="subject">
+                    <textarea placeholder="Describe your project in detail..." id="description"></textarea>
                 </form>
                 <div class="contact-info">
                     <h4>Contact Information</h4>
@@ -210,8 +220,8 @@
                     <div class="message hidden" id="message-block">
                         <div class="message" id="message">
                             <p>Письмо отправлено</p>
-                            <p>Тема: <span id="topic"></span> </p>
-                            <p>Описание: <span id="about-what"></span> </p>
+                            <p><span id="topic"></span> </p>
+                            <p><span id="about-what"></span> </p>
                             <button id="close-message">OK</button>
                         </div>
                     </div>
