@@ -52,12 +52,12 @@ form.addEventListener('submit', (eve) => {
     // `;
     // message.innerHTML += '<button id="close-message">OK</button>';
 
-    if (!subject) { message.querySelectorAll('p')[1].innerHTML = '<span id="topic">Без темы</span>' } else {
-        document.getElementById('topic').innerText = `Тема: ${subject}`;
+    if (!subject) { message.querySelectorAll('p')[1].innerHTML = '<span id="topic">Without subject</span>' } else {
+        document.getElementById('topic').innerText = `Subject: ${subject}`;
     }
 
-    if (!description) { message.querySelectorAll('p')[2].innerHTML = '<span id="about-what">Без описания</span>' } else {
-        document.getElementById('about-what').innerText = `Описание: ${description}`;
+    if (!description) { message.querySelectorAll('p')[2].innerHTML = '<span id="about-what">Without description</span>' } else {
+        document.getElementById('about-what').innerText = `Description: ${description}`;
     }
 
     return false;

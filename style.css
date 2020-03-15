@@ -152,17 +152,12 @@ h1 {
 .left-arr:hover,
 .right-arr:hover {
     cursor: pointer;
-    margin-bottom: 10px;
+    transform: scale(1.3);
 }
 
 .horizontal_phone {
     margin-right: -16px;
     margin-top: -7px;
-}
-
-.slide-blue {
-    background-color: #648BF0;
-    left: 217px;
 }
 
 .services {
@@ -542,10 +537,27 @@ h1 {
     width: 300px;
     top: 50%;
     left: calc(50% - 150px);
-    border: #191919 solid 5px;
+    border: lightgreen solid 5px;
     text-align: center;
     background-color: #f06c64;
     color: #191919;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 2;
+    box-shadow: 0 0 10px 10px #5b7429;
+}
+
+#topic {
+    font-style: italic;
+}
+
+#close-message {
+    padding: 5px 10px;
+    margin: 10px;
+    color: #2d2f3b;
+    background-color: bisque;
+    box-shadow: 0 0 7px 7px rgb(202, 187, 53);
+    cursor: pointer;
 }
 
 button.active-white {
