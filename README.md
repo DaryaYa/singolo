@@ -1,1 +1,1 @@
-# [singolo](https://daryaya.github.io/singolo/)
+# [singolo-DOM](https://daryaya.github.io/singolo/)
