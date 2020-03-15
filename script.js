@@ -8,6 +8,7 @@ let form = document.getElementById('data');
 let PARTFOLIO_BUTTONS = document.querySelector('.portfolio-buttons');
 const verticalPhone = document.querySelector('.vert_phone');
 const horizPhone = document.querySelector('.horizontal_phone');
+const blue = document.querySelector('.slide-blue');
 
 function shuffle() {
     let first = PLATES.firstChild;
@@ -77,6 +78,11 @@ horizPhone.addEventListener('click', () => {
     horizPhone.querySelector('.black-right')
         .classList.toggle('hidden');
 });
+
+blue.addEventListener('click', () => {
+    blue.querySelector('.black-blue')
+        .classList.toggle('hidden');
+})
 
 ////////// carousel 
 

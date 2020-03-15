@@ -155,9 +155,16 @@ h1 {
     transform: scale(1.3);
 }
 
+.vert_phone {
+    box-shadow: 30px 23px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+}
+
 .horizontal_phone {
     margin-right: -16px;
     margin-top: -7px;
+    box-shadow: 30px 23px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
 }
 
 .services {
@@ -575,8 +582,8 @@ div.hidden {
     height: 333px;
     position: absolute;
     background-color: black;
-    top: 80px;
-    left: 92px;
+    top: 93px;
+    left: 107px;
     border-radius: 2px;
 }
 
@@ -586,8 +593,19 @@ div.hidden {
     height: 189px;
     position: absolute;
     background-color: black;
-    top: 147px;
-    right: 152px;
+    top: 158px;
+    right: 143px;
+    border-radius: 2px;
+}
+
+.black-blue {
+    display: block;
+    width: 200px;
+    height: 355px;
+    position: absolute;
+    background-color: black;
+    top: 68px;
+    left: 357px;
     border-radius: 2px;
 }
 
