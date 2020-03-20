@@ -49,23 +49,24 @@ h1 {
     background: #2d2f3b;
 }
 
-.sticky {
-    max-width: 1020px;
-    margin: 0 auto;
+.fixed {
+    width: 1020px;
     padding: 0 40px;
     background: rgba(45, 47, 59, 0.85);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: calc(100vw/2 - 518px);
+    z-index: 5;
 }
 
 .header {
     display: flex;
-    height: 89px;
+    height: 90px;
     justify-content: space-between;
     align-items: center;
     color: white;
     font-weight: bold;
-    padding-top: 9px;
+    padding-top: 10px;
     padding-right: 2px;
 }
 
@@ -115,7 +116,7 @@ h1 {
 }
 
 .line-top {
-    background-color: #2d2f3b;
+    background-color: #353846;
     height: 6px;
     width: 1020px;
     margin: 0 auto;
@@ -126,6 +127,11 @@ h1 {
     height: 6px;
     width: 1020px;
     margin: 0 auto;
+}
+
+.top-space {
+    height: 89px;
+    background-color: rgb(45, 47, 59);
 }
 
 .main {
@@ -495,6 +501,7 @@ h1 {
 
 .footer {
     height: 76px;
+    margin-bottom: 300px;
 }
 
 .footer-info {
