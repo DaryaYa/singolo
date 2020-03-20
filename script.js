@@ -8,6 +8,26 @@ let form = document.getElementById('data');
 let PARTFOLIO_BUTTONS = document.querySelector('.portfolio-buttons');
 const verticalPhone = document.querySelector('.vert_phone');
 const horizPhone = document.querySelector('.horizontal_phone');
+const blue = document.querySelector('.slide-blue');
+
+function onScroll(event) {
+    let curPos = window.scrollY;
+    let divs = document.querySelectorAll('.block');
+    let links = TOP_MENU.querySelectorAll('a');
+
+    divs.forEach((el) => {
+
+        if ((el.offsetTop - 90 <= curPos) && ((el.offsetTop + el.offsetHeight) >= curPos)) {
+            links.forEach((a) => {
+                a.classList.remove('active');
+                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
+        }
+    });
+
+}
 
 function shuffle() {
     let first = PLATES.firstChild;
@@ -21,6 +41,8 @@ TOP_MENU.addEventListener('click', (event) => {
     TOP_MENU.querySelectorAll('li').forEach(element => element.querySelector('a').classList.remove('active'));
     target.classList.add('active');
 });
+
+document.addEventListener('scroll', onScroll);
 
 PARTFOLIO_BUTTONS.addEventListener('click', (e) => {
     const target = e.target;
@@ -77,6 +99,11 @@ horizPhone.addEventListener('click', () => {
     horizPhone.querySelector('.black-right')
         .classList.toggle('hidden');
 });
+
+blue.addEventListener('click', () => {
+    blue.querySelector('.black-blue')
+        .classList.toggle('hidden');
+})
 
 ////////// carousel 
 
