@@ -5,7 +5,7 @@ const messageBlock = document.getElementById('message-block');
 const message = document.getElementById('message');
 let CLOSE_MESSAGE = document.getElementById('close-message');
 let form = document.getElementById('data');
-let PARTFOLIO_BUTTONS = document.querySelector('.portfolio-buttons');
+let PORTFOLIO_BUTTONS = document.querySelector('.portfolio-buttons');
 const verticalPhone = document.querySelector('.vert_phone');
 const horizPhone = document.querySelector('.horizontal_phone');
 const blue = document.querySelector('.slide-blue');
@@ -44,12 +44,15 @@ TOP_MENU.addEventListener('click', (event) => {
 
 document.addEventListener('scroll', onScroll);
 
-PARTFOLIO_BUTTONS.addEventListener('click', (e) => {
+PORTFOLIO_BUTTONS.addEventListener('click', (e) => {
     const target = e.target;
-    PARTFOLIO_BUTTONS.querySelectorAll('button').forEach(elem => elem.classList
+    
+    if (target.tagName == 'BUTTON') {
+        PORTFOLIO_BUTTONS.querySelectorAll('button').forEach(elem => elem.classList
         .remove('active-white'));
     target.classList.add('active-white');
-    shuffle();
+    shuffle(); 
+    }   
 })
 
 PLATES.addEventListener('click', (ev) => {
@@ -105,7 +108,7 @@ blue.addEventListener('click', () => {
         .classList.toggle('hidden');
 })
 
-////////// carousel 
+//////// carousel 
 
 let items = document.querySelectorAll('.carousel .item');
 let currentItem = 0;
