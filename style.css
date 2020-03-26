@@ -50,13 +50,18 @@ h1 {
 }
 
 .fixed {
-    width: 1020px;
+    width: 100%;
+    max-width: 1020px;
     padding: 0 40px;
-    background: rgba(45, 47, 59, 0.85);
+    background: rgb(45, 47, 59);
     position: fixed;
     top: 0;
     left: calc((100% - 1020px)/2);
     z-index: 5;
+}
+
+.block {
+    scroll-margin-top: 89px;
 }
 
 .header {
@@ -164,6 +169,12 @@ h1 {
 .vert_phone {
     box-shadow: 30px 23px 0px 0px rgba(0, 0, 0, 0.1);
     border-radius: 26px;
+    /* background-image: url('./assets/phone-vertical-display.png'); */
+}
+
+.vert_phone img,
+.horizontal_phone img {
+    width: 100%;
 }
 
 .horizontal_phone {
@@ -242,7 +253,7 @@ h1 {
 .service_item .text {
     font-size: 12px;
     line-height: 1.8;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .portfolio {
@@ -592,17 +603,23 @@ div.hidden {
     top: 93px;
     left: 107px;
     border-radius: 2px;
+
 }
 
 .black-right {
     display: block;
-    width: 333px;
-    height: 189px;
+    /* width: 333px;
+    height: 189px; */
     position: absolute;
     background-color: black;
-    top: 158px;
-    right: 143px;
+    /* top: 158px;
+    right: 143px; */
     border-radius: 2px;
+    width: 35.4%;
+    height: 36.5%;
+    top: 30.8%;
+
+    right: 15.2%;
 }
 
 .black-blue {
@@ -690,3 +707,67 @@ div.hidden {
     }
 }
 
+@media all and (max-width: 1020px) {
+    .fixed {
+        left: 0px;
+    }
+
+    .services {
+        height: auto;
+    }
+
+    .service_list {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .portfolio {
+        height: auto;
+        padding-bottom: 74px;
+    }
+
+    .plates {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .plate {
+        margin: 10px;
+        flex: 1 0 20%;
+        width: auto;
+        height: auto;
+    }
+
+    .plates img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        flex: 0 1 32%;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .line-top {
+        width: auto;
+    }
+
+    .line {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+
+    .plate {
+
+        flex: 1 0 30%;
+
+    }
+}
