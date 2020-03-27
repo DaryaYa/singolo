@@ -360,14 +360,14 @@ h1 {
 
 .cards {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin-top: 43px;
 }
 
 .card {
     width: 304px;
     height: 443px;
-    margin: calc(2%/2);
+    /* margin: calc(2%/2); */
     text-align: justify;
 }
 
@@ -399,7 +399,7 @@ h1 {
     font-family: "Lato";
     font-weight: 400;
     margin-top: 9px;
-    letter-spacing: 0.3px;
+    /* letter-spacing: 0.3px; */
 }
 
 .icons {
@@ -445,6 +445,9 @@ h1 {
 .form textarea::placeholder {
     color: #f48c8f;
     opacity: 1;
+    font-size: 11px;
+    letter-spacing: 0.1px;
+
 }
 
 .form input {
@@ -475,7 +478,8 @@ h1 {
 
 .contact-info {
     width: 300px;
-    margin-left: 30px;
+    margin-left: 25px;
+    ;
 }
 
 .contact-info h4 {
