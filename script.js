@@ -39,17 +39,25 @@ function shuffle() {
 }
 
 burger.addEventListener('click', (event) => {
-    console.log(event.target);
-    event.target.classList.add('burger-transform');
-    document.querySelector('.logo').classList.add('logo-transform');
-    TOP_MENU.style.visibility = 'visible';
-    document.querySelector('.menu-bg').classList.remove('hidden');
-})
+    if(event.target.tagName === 'DIV') {
+        event.target.classList.toggle('burger-transform');
+        document.querySelector('.logo').classList.toggle('logo-transform');
+        TOP_MENU.classList.toggle('non-visible');
+        document.querySelector('.menu-bg').classList.toggle('hidden');
+    }    
+});
+
 
 TOP_MENU.addEventListener('click', (event) => {
     const target = event.target;
     TOP_MENU.querySelectorAll('li').forEach(element => element.querySelector('a').classList.remove('active'));
     target.classList.add('active');
+    if (!TOP_MENU.classList.contains('non-visible')) {
+        TOP_MENU.classList.add('non-visible');
+        burger.classList.remove('burger-transform');
+        document.querySelector('.menu-bg').classList.add('hidden');
+        document.querySelector('.logo').classList.remove('logo-transform');
+    }
 });
 
 document.addEventListener('scroll', onScroll);
