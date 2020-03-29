@@ -787,7 +787,7 @@ div.hidden {
     }
 
     .about-us {
-        margin-bottom: 10%;
+        padding-bottom: 10%;
         height: auto;
     }
 
@@ -810,7 +810,7 @@ div.hidden {
     }
 
     .form textarea {
-        height: 150px;
+        height: 156px;
     }
 
     .line-top {
@@ -924,6 +924,7 @@ div.hidden {
         height: 24px;
         width: 24px;
         top: -5px;
+        left: -20px;
         margin-right: 32%;
         z-index: 11;
         cursor: pointer;
@@ -995,6 +996,14 @@ div.hidden {
         display: none;
     }
 
+    .portfolio h2 {
+        padding-top: 37px;
+    }
+
+    .portfolio-text {
+        line-height: 1.5;
+    }
+
     .portfolio-buttons {
         margin: 10px 0 19px;
     }
@@ -1008,6 +1017,7 @@ div.hidden {
 
     .about-us {
         height: auto;
+        padding-bottom: 0;
     }
 
     .cards {
@@ -1022,22 +1032,30 @@ div.hidden {
         width: auto;
     }
 
+    .last-part h2 {
+        padding-top: 47px;
+    }
+
     .submit-button {
         width: 100%;
+        height: 50px;
+        margin-bottom: 9%;
     }
 
     .form {
         display: block;
+        margin-top: 6%;
     }
 
     .form form {
         width: auto;
+        padding-right: 12px;
     }
 
     .contact-info {
         width: auto;
         margin: 0;
-        padding-bottom: 25px;
+        padding-bottom: 40px;
     }
 
     .footer-info {
@@ -1049,5 +1067,56 @@ div.hidden {
 
     .footer-info div:first-child {
         display: none;
+    }
+}
+
+@media all and (max-width: 450px) {
+
+    .services_title {
+        padding-top: 30px;
+    }
+
+    .right-arr {
+        top: 42%;
+        right: -3%;
+    }
+
+    .left-arr {
+        top: 42%;
+        left: -3%;
+    }
+
+    .portfolio {
+        padding-bottom: 37px;
+    }
+
+    .about-us {
+        padding-top: 35px;
+    }
+
+    .cards {
+        padding-bottom: 13px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        padding: 4px;
+    }
+
+    .last-part>p {
+        letter-spacing: 1.5px;
+    }
+
+    .form input {
+        margin-bottom: 10px;
+    }
+
+    .form-text {
+        margin-top: 3px;
+    }
+
+    .form-address {
+        margin-top: 14px;
+        line-height: 2;
     }
 }
