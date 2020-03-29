@@ -9,6 +9,8 @@ let PORTFOLIO_BUTTONS = document.querySelector('.portfolio-buttons');
 const verticalPhone = document.querySelector('.vert_phone');
 const horizPhone = document.querySelector('.horizontal_phone');
 const blue = document.querySelector('.slide-blue');
+const burger = document.querySelector('.header__burger');
+
 
 function onScroll(event) {
     let curPos = window.scrollY;
@@ -36,10 +38,26 @@ function shuffle() {
     PLATES.append(first);
 }
 
+burger.addEventListener('click', (event) => {
+    if(event.target.tagName === 'DIV') {
+        event.target.classList.toggle('burger-transform');
+        document.querySelector('.logo').classList.toggle('logo-transform');
+        TOP_MENU.classList.toggle('non-visible');
+        document.querySelector('.menu-bg').classList.toggle('hidden');
+    }    
+});
+
+
 TOP_MENU.addEventListener('click', (event) => {
     const target = event.target;
     TOP_MENU.querySelectorAll('li').forEach(element => element.querySelector('a').classList.remove('active'));
     target.classList.add('active');
+    if (!TOP_MENU.classList.contains('non-visible')) {
+        TOP_MENU.classList.add('non-visible');
+        burger.classList.remove('burger-transform');
+        document.querySelector('.menu-bg').classList.add('hidden');
+        document.querySelector('.logo').classList.remove('logo-transform');
+    }
 });
 
 document.addEventListener('scroll', onScroll);

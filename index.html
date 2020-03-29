@@ -14,17 +14,20 @@
         <header class="fixed">
             <!-- <a name="home"></a> -->
             <div class="header">
-
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <div class="logo">
                     <h1><span>SINGOLO</span><span class="logo-star">*</span></h1>
                 </div>
-                <ul class="menu" id="top-menu">
+                <ul class="menu non-visible" id="top-menu">
                     <li><a class="top-link active" href="#home">HOME</a></li>
                     <li><a class="top-link" href="#services">SERVICES</a></li>
                     <li><a class="top-link" href="#portfolio">PORTFOLIO</a></li>
                     <li><a class="top-link" href="#about-us">ABOUT</a></li>
                     <li><a class="top-link" href="#contacts">CONTACT</a></li>
                 </ul>
+                <div class="menu-bg hidden"></div>
             </div>
         </header>
 
@@ -37,11 +40,11 @@
                     <div class="item current">
                         <div class="slide">
                             <div class="vert_phone">
-                                <img src="./assets/vertical.png" alt="Vertical">
+                                <img src="./assets/phone-vertical.png " alt="Vertical">
                                 <div class="black-left hidden"></div>
                             </div>
                             <div class="horizontal_phone">
-                                <img src="./assets/horiz.png" alt="Horizontal">
+                                <img src="./assets/phone-horizontal.png " alt="Horizontal">
                                 <div class="black-right hidden"></div>
                             </div>
                         </div>
@@ -216,6 +219,7 @@
                     <input type="email" placeholder="Email (Required)" id="email" name="email" required>
                     <input type="text" placeholder="Subject" id="subject" name="subject">
                     <textarea placeholder="Describe your project in detail..." id="description" maxlength="150"></textarea>
+                    <button class="submit-button" type="submit" form="data">SUBMIT</button>
                 </form>
                 <div class="contact-info">
                     <h4>Contact Information</h4>
@@ -225,7 +229,7 @@
                         <a href="tel:3318635"><img src="./assets/cell.png" alt="phone">03528 331 86 35 </a><br>
                         <a href="mailto:info@singolo.com"><img src="./assets/mail.png" alt="mail">info@singolo.com</a>
                     </div>
-                    <button class="submit-button" type="submit" form="data">SUBMIT</button>
+                    
                     <div class="message hidden" id="message-block">
                         <div class="message" id="message">
                             <p>The letter was sent</p>
@@ -240,7 +244,7 @@
         </section>
     </main>
     <footer class="footer wrapper">
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
 
         <div class="footer-info">
             <div>
@@ -253,6 +257,7 @@
                 <a href="#" class="icon"><img src="./assets/linkedin.png" alt="linkedIn"></a>
             </div>
         </div>
+       
     </footer>
     <script src="./script.js"></script>
 </body>
