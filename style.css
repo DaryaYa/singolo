@@ -84,7 +84,7 @@ h1 {
 .menu {
     display: flex;
     width: 370px;
-    font-size: 11px;
+    font-size: 12px;
     list-style: none;
     justify-content: space-between;
     height: 100%;
@@ -101,7 +101,7 @@ h1 {
 .top-link::before {
     content: '·';
     color: #ffffff30;
-    margin-right: 17px;
+    margin-right: 14px;
 }
 
 .top-link:hover {
@@ -531,7 +531,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     color: #666d89;
-    margin-top: 22px;
+    height: 100%;
+    align-items: center;
 }
 
 .footer-info div:first-child {
@@ -725,12 +726,35 @@ div.hidden {
 }
 
 @media all and (max-width: 1020px) {
+
+    .wrapper {
+        padding: 0 20px;
+    }
     .fixed {
         left: 0px;
     }
 
+    .main {
+        height: auto;
+    }
+
+    .slide {
+        height: auto;
+        margin-top: 42px;
+        margin-bottom: 20px;
+    }
+
+    .slide-blue {
+        width: 56.2%;
+        margin: -1% 5% 1%;
+    }
+
     .services {
         height: auto;
+    }
+
+    .services_title {
+        padding-top: 40px;
     }
 
     .service_list {
@@ -761,13 +785,31 @@ div.hidden {
         height: 100%;
     }
 
+    .about-us {
+        margin-bottom: 10%;
+        height: auto;
+    }
+
     .card {
         flex: 0 1 32%;
+        height: auto;
     }
 
     .photo img {
         width: 100%;
         height: 100%;
+    }
+
+    .icons {
+        margin-top: 0px;
+    }
+
+    .form {
+        margin-top: 3%;
+    }
+
+    .form textarea {
+        height: 150px;
     }
 
     .line-top {
@@ -819,6 +861,10 @@ div.hidden {
         justify-content: flex-start;
     }
 
+    .top-space {
+        height: 71px;
+    }
+
     .header__burger {
         display: block;
         position: relative;
@@ -855,6 +901,16 @@ div.hidden {
         top: 12px;
     }
 
+    .slide {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .slide-blue {
+        width: 56.2%;
+        margin: -1% 5% 1%;
+    }
+
     .last-part {
         height: auto;
     }
@@ -865,24 +921,41 @@ div.hidden {
         border: none;
         border-radius: 5px;
         width: 136px;
-        margin-bottom: 41px;
+        margin-bottom: 5%;
     }
 }
 
 @media all and (max-width: 590px) {
 
+    .plates {
+        margin-top: 20px;
+    }
+
     .plate {
-        flex: 1 0 43%;
+        flex: 1 0 42%;
+        margin: 5px;
     }
 
     .plate:nth-child(n+9) {
         display: none;
     }
 
+    .portfolio-buttons {
+        margin: 10px 0 19px;
+    }
+
+    .portfolio-buttons button {
+        font-size: 12px;
+        line-height: 11px;
+        padding: 4px 4px 4px;
+        letter-spacing: -0.015em;
+    }
+
     .about-us {
         height: auto;
     }
-     .cards {
+
+    .cards {
         flex-direction: column;
         justify-content: center;
         align-items: center;
