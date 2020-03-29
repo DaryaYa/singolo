@@ -9,6 +9,8 @@ let PORTFOLIO_BUTTONS = document.querySelector('.portfolio-buttons');
 const verticalPhone = document.querySelector('.vert_phone');
 const horizPhone = document.querySelector('.horizontal_phone');
 const blue = document.querySelector('.slide-blue');
+const burger = document.querySelector('.header__burger');
+
 
 function onScroll(event) {
     let curPos = window.scrollY;
@@ -35,6 +37,14 @@ function shuffle() {
     PLATES.append(PLATES.firstChild);
     PLATES.append(first);
 }
+
+burger.addEventListener('click', (event) => {
+    console.log(event.target);
+    event.target.classList.add('burger-transform');
+    document.querySelector('.logo').classList.add('logo-transform');
+    TOP_MENU.style.visibility = 'visible';
+    document.querySelector('.menu-bg').classList.remove('hidden');
+})
 
 TOP_MENU.addEventListener('click', (event) => {
     const target = event.target;
