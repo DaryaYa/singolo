@@ -845,7 +845,7 @@ div.hidden {
     }
 
     .menu {
-        padding-left: 54px;
+        padding-left: 70px;
         position: absolute;
         font-size: x-large;
 
@@ -912,6 +912,10 @@ div.hidden {
 
     .top-space {
         height: 71px;
+    }
+
+    .block {
+        scroll-margin-top: 71px;
     }
 
     .header__burger {
