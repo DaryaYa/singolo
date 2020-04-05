@@ -38,13 +38,13 @@ function shuffle() {
     PLATES.append(first);
 }
 
-burger.addEventListener('click', (event) => {
-    if(event.target.tagName === 'DIV') {
-        event.target.classList.toggle('burger-transform');
+burger.addEventListener('click', () => {
+    
+        burger.classList.toggle('burger-transform');
         document.querySelector('.logo').classList.toggle('logo-transform');
         TOP_MENU.classList.toggle('non-visible');
         document.querySelector('.menu-bg').classList.toggle('hidden');
-    }    
+       
 });
 
 
